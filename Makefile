@@ -7,6 +7,9 @@ FILE=nmon.c
 
 nmon_power_rhel3: $(FILE)
 	cc -o nmon_power_rhel3 $(FILE) $(CFLAGS) $(LDFLAGS) -D POWER
+	
+nmon_power_rhel7: $(FILE)
+        gcc -o nmon_power_rhel7 $(FILE) $(CFLAGS) $(LDFLAGS) -D POWER
 
 nmon_power_rhel4: $(FILE)
 	gcc -o nmon_power_rhel4 $(FILE) $(CFLAGS) $(LDFLAGS) -D POWER
